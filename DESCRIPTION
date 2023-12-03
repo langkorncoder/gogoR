@@ -30,4 +30,5 @@ Imports:
     rlang (>= 1.1.2),
     glue (>= 1.6.2),
     readr (>= 2.1.4)
+Remotes: github::langkorncoder/gogor
 RoxygenNote: 7.2.3

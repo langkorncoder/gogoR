@@ -23,3 +23,5 @@ cc_glmer <- function(target, effects, data, test = "Chisq") {
   # Geben Sie die ANOVA-Tabelle, die model_list und die summary_list zurück
   results <- return(list(anova_table = anova_table, model_list = model_list, summary_list = summary_list))
 }
+
+
