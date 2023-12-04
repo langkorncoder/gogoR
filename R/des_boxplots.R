@@ -11,7 +11,6 @@
 #' @param color_values A vector of color values to be used for coloring the boxplots. Default is NULL.
 #' @param save_plots A logical value indicating whether the plots should be saved as .jpg files. Default is FALSE.
 #' @return A list of ggplot2 objects containing the boxplots.
-#'
 #' @import ggplot2
 #' @importFrom ggpubr ggboxplot
 #' @importFrom ggplot2 theme element_text element_rect scale_y_continuous facet_wrap

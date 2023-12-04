@@ -22,19 +22,6 @@
 #'   The W column contains the Shapiro-Wilk test statistic for each variable.
 #'   The p_value column contains the p-value for each variable.
 #'
-#' @examples
-#' # Use the mtcars data set as an example
-#' data(mtcars)
-#'
-#' # Run the des_shapiro function on the mtcars data set
-#' des_shapiro(mtcars)
-#'
-#' # Save the results to a file named "mtcars_shapiro.csv"
-#' des_shapiro(mtcars, to_csv = TRUE, output_file = "mtcars_shapiro.csv")
-#'
-#' # Drop the vs and am columns before testing
-#' des_shapiro(mtcars, drop_cols = c("vs", "am"))
-#'
 #' @export
 des_shapiro <- function(input, to_csv = FALSE, drop_cols = NULL,  output_file = "output.csv") {
   data <- tibble::as_tibble(input)

@@ -10,10 +10,6 @@
 #' @param to_csv A logical value indicating whether to write the output to a CSV file. Default is FALSE.
 #'
 #' @return A list containing the selected and formatted data and its structure.
-#'
-#' @examples
-#' tra_select_means(input = data, selects = c("col1", "col2"), date_col = "date", to_csv = TRUE)
-#'
 #' @importFrom tibble as_tibble
 #' @importFrom dplyr select mutate
 #' @importFrom lubridate parse_date_time year month

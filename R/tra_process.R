@@ -12,13 +12,6 @@
 #' @importFrom tibble as_tibble
 #' @importFrom readr write_csv
 #' @importFrom dplyr glimpse select rename group_by add_tally
-#' @examples
-#' # Load the iris data set
-#' data(iris)
-#'
-#' # Process the iris data with tra_process function
-#' tra_process(iris, cols_drop = "Species", cols_rename = c(Sepal.Length = "sepal_length"), cols_group = c("Petal.Width", "Petal.Length"), to_csv = FALSE)
-
 #' @export
 tra_process <- function(input_data, output_file = "meandata/means.csv",  cols_drop = NULL, cols_rename = NULL, cols_group = NULL, to_csv = FALSE) {
 

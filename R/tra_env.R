@@ -11,11 +11,6 @@
 #' @importFrom glue glue
 #' @importFrom readr write_csv
 #' @importFrom tibble as_tibble
-#' @examples
-#' tra_env(input = env_data, output_file = "import/env_import_Bavaria.csv", state_name = "Bavaria", to_csv = TRUE)
-#' tra_env(input = env_data, output_file = "import/env_import_Bavaria.csv", state_name = "Bavaria")
-#' tra_env(input = env_data, output_file = "import/env_import_Bavaria.csv")
-#'
 #' @export
 tra_env <- function(input, output_file = glue::glue("import/env_import_{state_name}.csv"), str_output = "str.csv", state_name = "Bundesland", to_csv = FALSE) {
 

@@ -32,7 +32,3 @@ A list containing the selected and formatted data and its structure.
 \description{
 This function selects columns from a tibble and formats the data by adding year and month columns.
 }
-\examples{
-tra_select_means(input = data, selects = c("col1", "col2"), date_col = "date", to_csv = TRUE)
-
-}

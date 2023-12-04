@@ -41,7 +41,3 @@ tra_switch(
 \description{
 Switch
 }
-\examples{
-data(mtcars)
-result <- tra_switch(data = mtcars, type = "long_melt", variable.name = "variable", value.var = "value", ids = 1:3)
-}

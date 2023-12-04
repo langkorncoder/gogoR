@@ -31,9 +31,3 @@ A list containing two objects: env_import and str_env_import.
 Import environmental data
 This function imports environmental data and creates new columns containing the name of the state and the env_id which is a paste object of the state, the bdf, the year and the month.
 }
-\examples{
-tra_env(input = env_data, output_file = "import/env_import_Bavaria.csv", state_name = "Bavaria", to_csv = TRUE)
-tra_env(input = env_data, output_file = "import/env_import_Bavaria.csv", state_name = "Bavaria")
-tra_env(input = env_data, output_file = "import/env_import_Bavaria.csv")
-
-}

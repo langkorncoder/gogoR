@@ -12,14 +12,12 @@
 #'
 #' @importFrom janitor clean_names remove_empty remove_constant
 #' @importFrom tibble as_tibble
-#'
-#' @examples
-#' read_and_clean_data("path/to/file.csv", seperate = ";", decim = ",", tibble = TRUE)
+#' @importFrom utils read.csv
 #'
 #' @export
 read_and_clean_data <- function(file_path, seperate = ";", decim = ",", tibble = TRUE) {
   # Read the CSV file with specified separator and decimal point
-  data <- read.csv(file_path, sep = seperate, dec = decim)
+  data <- utils::read.csv(file_path, sep = seperate, dec = decim)
 
   # Clean the column names using the clean_names() function from the janitor package
   cleaned_data <- data %>%

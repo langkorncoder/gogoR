@@ -19,8 +19,3 @@ A dataframe with information about the structure of the input dataframe
 \description{
 This function provides how the dataframe of your interest is structured. Names of column, their position, class, nrows, unique values and examples. Also gives possibility to export dataframe as .csv file.
 }
-\examples{
-structured(mtcars)
-structured(mtcars, to_csv = TRUE, output_file = "mtcars_structured.csv")
-
-}

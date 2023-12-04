@@ -32,10 +32,3 @@ A tibble of the processed data with means of numeric columns and first values of
 \description{
 This function converts the data frame to a tibble, optionally drops and renames columns, groups the data by specified columns and calculates the mean of numeric columns, and optionally writes the processed data to a CSV file.
 }
-\examples{
-# Load the iris data set
-data(iris)
-
-# Process the iris data with tra_process function
-tra_process(iris, cols_drop = "Species", cols_rename = c(Sepal.Length = "sepal_length"), cols_group = c("Petal.Width", "Petal.Length"), to_csv = FALSE)
-}

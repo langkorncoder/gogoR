@@ -12,10 +12,6 @@
 #' @import dplyr
 #' @importFrom reshape2 melt
 #' @importFrom reshape2 dcast
-#' @examples
-#' data(mtcars)
-#' result <- tra_switch(data = mtcars, type = "long_melt", variable.name = "variable", value.var = "value", ids = 1:3)
-
 #' @export
 # Define the tra_switch function with additional parameters
 tra_switch <- function(data, type = NULL, variable.name = "time", value.var = "value", melts_long = "x\\d+", set_numeric = TRUE, ids= NULL, time_pattern = "x\\d+", time_prefix = "x", time = NULL) {

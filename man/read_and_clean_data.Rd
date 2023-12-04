@@ -21,7 +21,3 @@ A tibble containing the cleaned data.
 \description{
 This function reads a CSV file with specified separator and decimal point, cleans the column names using the clean_names() function from the janitor package, and returns the cleaned data as a tibble.
 }
-\examples{
-read_and_clean_data("path/to/file.csv", seperate = ";", decim = ",", tibble = TRUE)
-
-}

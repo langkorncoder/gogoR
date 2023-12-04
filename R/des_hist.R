@@ -36,14 +36,6 @@
 #' @importFrom tibble as_tibble
 #' @importFrom readr write_csv
 #' @importFrom dplyr rename
-#' @importFrom gogor structured
-#' @examples
-#' \dontrun{
-#' des_hist(hessen_means_select, type = "all",  hist_column = "stoff",
-#'          value_column = "ergebnis", id_name = c(method_id = "hist_id"),
-#'          save_plots = FALSE, to_csv = FALSE, output_file = "data.csv",
-#'          color_var = "methode", color_values = NULL, facet_var = NULL)
-#' }
 #' @export
 # Define a function that creates custom histograms based on user inputs
 des_hist <- function(input, type = "specific",  hist_column = NULL, value_column = NULL, id_name = c(method_id = "hist_id"), save_plots = FALSE, to_csv = FALSE, output_file = "data.csv", color_var = NULL, color_values = NULL, facet_var = NULL) {
@@ -200,11 +192,11 @@ des_hist <- function(input, type = "specific",  hist_column = NULL, value_column
          }
   )
 
-  # Use the gogor package to check the structure of the data
-  structured <- gogor::structured(data)
+  # Use the dplyr package to check the structure of the data
+  dplyr::glimpse(data)
 
   # Return the output as a list containing the data and the histograms
-  return(list(data = data, histograms = histograms, structured = structured))
+  return(list(data = data, histograms = histograms))
 }
 
 

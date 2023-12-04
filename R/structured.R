@@ -8,10 +8,6 @@
 #'
 #' @return A dataframe with information about the structure of the input dataframe
 #'
-#' @examples
-#' structured(mtcars)
-#' structured(mtcars, to_csv = TRUE, output_file = "mtcars_structured.csv")
-#'
 #' @export
 structured <- function(newdf = NULL, to_csv = FALSE, output_file = "structured.csv") {
   if(is.null(newdf)) {
