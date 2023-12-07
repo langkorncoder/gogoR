@@ -1,7 +1,7 @@
 Package: gogor
 Type: Package
 Title: A Collection of Useful Functions for Transforming, Editing and Plotting Biological and Environmental Data
-Version: 0.1.1
+Version: 0.2
 Author: Godber Sönke Andrés Maria Godbersen
 Maintainer: Godbersen <godbersengodber@gmail.com>
 Description: This package contains great functions for transforming, editing and plotting biological and environmental data. The functions are divided into des_, tra_ and cc_ groups. The des_ functions enable the automated description of the data. For example, des_boxplot performs user-defined boxplots for each numeric variable in the data set. des_shapiro can perform a Shapiro test for each numeric variable, from which it can be read whether the data must be analyzed with parametric or non-parametric tests. The tra_ functions enable the transformation of data according to defined parameters. For example, tables can be transposed, which enables the use of different packages. A specific function is tra_env, which can only be used for BDF data. Other useful functions are the cc_models functions. cc stands for create and compare models. They make it possible to determine the most suitable model (lmer, glmer, lm, aov) with just a few clicks. check_model_assumptions can be used afterwards to check the model assumptions using the performance package. So there are a lot of cool functions here, which hopefully can also be useful for other scientists in the field of bioinformatics :-).

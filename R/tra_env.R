@@ -1,4 +1,4 @@
-#' Import environmental data
+#' @title Import environmental data
 #' This function imports environmental data and creates new columns containing the name of the state and the env_id which is a paste object of the state, the bdf, the year and the month.
 
 #' @param input A tibble containing the environmental data.
